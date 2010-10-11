@@ -1,0 +1,392 @@
+1
+00:00:18,350 --> 00:00:01,000
+I will do a quick presentation of Minbif
+
+2
+00:00:21,150 --> 00:00:02,000
+which allows you to use IRC to communicate with the real world, the modern world
+
+3
+00:00:27,350 --> 00:00:03,000
+I don't know if there are many who know IRC, or don't know IRC maybe?
+
+4
+00:00:31,550 --> 00:00:04,000
+Considering the idleness of the room, I will… (shit)
+
+5
+00:00:37,350 --> 00:00:05,000
+I will (shit) be fairly short.
+
+6
+00:00:40,050 --> 00:00:05,000
+IRC is an ancient protocol which (fuck) was created in 88
+
+7
+00:00:46,350 --> 00:00:06,000
+which… (so, something is advancing automatically… now that's better)
+
+8
+00:00:51,750 --> 00:00:07,000
+So, it's a procotol which was created in 88 and was used by geeks
+
+9
+00:00:57,550 --> 00:00:08,000
+on the console, which has no extra features besides chatting in rooms and in private
+
+10
+00:01:05,350 --> 00:00:09,000
+it is still used mainly by geeks, and is a bit endangered
+
+11
+00:01:11,350 --> 00:00:10,000
+because the mainstream is turned to instant messaging
+
+12
+00:01:19,450 --> 00:00:11,000
+multiple protocols were created after the 90s, the most known being MSN, ICQ
+
+13
+00:01:24,750 --> 00:00:12,000
+facebook, and other kind of crap, which usually require proprietary clients
+
+14
+00:01:32,150 --> 00:00:13,000
+or similar, and have useless feature for the average bearded man
+
+15
+00:01:36,650 --> 00:00:14,000
+like webcam, file transfer (it's useless, we have mails, etc.)
+
+16
+00:01:42,550 --> 00:00:15,000
+so Minbif will allow you to fix this
+
+17
+00:01:51,250 --> 00:00:16,000
+there already was a similar program, named BitlBee
+
+18
+00:01:54,750 --> 00:00:17,000
+which is quite well-known, and originated the IRC to IM gateway
+
+19
+00:02:01,150 --> 00:00:18,000
+from your IRC client, you would be able to communicate with non-geeks
+
+20
+00:02:06,050 --> 00:00:19,000
+it's a fork of aim, a pretty crappy program
+
+21
+00:02:10,550 --> 00:00:20,000
+which was rewritten, well splitted, as it's now named pidgin, which you might know of
+
+22
+00:02:19,850 --> 00:00:21,000
+they forked the code, and they maintained the procotols on their own
+
+23
+00:02:25,150 --> 00:00:22,000
+as a result, no backports were possible, the support older versions of the protocols
+
+24
+00:02:32,650 --> 00:00:23,000
+they had issues with MSN recently, or Yahoo!, I don't remember
+
+25
+00:02:36,650 --> 00:00:24,000
+of course the code is pretty crappy
+
+26
+00:02:40,550 --> 00:00:25,000
+so, as I said, pidgin splitted its application in parts
+
+27
+00:02:44,950 --> 00:00:26,000
+pidgin, the GUI, and libpurple, which handles the abstraction of the protocols
+
+28
+00:02:49,850 --> 00:00:27,000
+it handles more than 15 official protocols and also has unofficcial plugins
+
+29
+00:02:58,550 --> 00:00:28,000
+that's all I had to say
+
+30
+00:03:03,150 --> 00:00:29,000
+so to start a project which goal was to have a more up-to-date and wider support of the protocols, it seemed to be a good idea
+
+31
+00:03:12,550 --> 00:00:30,000
+Minbif was created a year ago from that idea, by using libpurple and being an abstraction to libpurple
+
+32
+00:03:26,550 --> 00:00:31,000
+it is written in C++ and is now fairly stable, in its 1.0.3 version
+
+33
+00:03:29,750 --> 00:00:32,000
+the idea is that the IRC client connects to Minbif, which is a fake IRC server
+
+34
+00:03:32,650 --> 00:00:33,000
+which allows you to add accounts for instant messaging services
+
+35
+00:03:40,750 --> 00:00:34,000
+and it will be the gateway, translating everything to the IRC protocol
+
+36
+00:03:48,950 --> 00:00:35,000
+allowing you to stay in your irssi to communicate with these aliens
+
+37
+00:03:53,250 --> 00:00:36,000
+but that are sometimes necessary for sex or this kind of stuff
+
+38
+00:03:57,750 --> 00:00:37,000
+so, contacts are represented by IRC users, there are status channels, which start with an ampersand
+
+39
+00:04:07,150 --> 00:00:38,000
+which are supposed to be local channels in IRC
+
+40
+00:04:11,350 --> 00:00:39,000
+we can see, considering their voice, if they are away or not
+
+41
+00:04:13,550 --> 00:00:40,000
+if they are not in the channel they are not connected
+
+42
+00:04:16,050 --> 00:00:41,000
+unlike BitlBee, you use real IRC commands and do not type in the channel
+
+43
+00:04:20,850 --> 00:00:42,000
+so /invite, /kick, /ban, /query, all that
+
+44
+00:04:23,650 --> 00:00:43,000
+I don't really need to explain in detail
+
+45
+00:04:26,150 --> 00:00:44,000
+I imagine you know IRC a bit, maybe
+
+46
+00:04:29,550 --> 00:00:45,000
+it also handle discussion channels, like group chats in msn, jabber channels, this kind of stuff
+
+47
+00:04:36,750 --> 00:00:46,000
+it's useful when you use jabber at your job
+
+48
+00:04:42,250 --> 00:00:47,000
+besides these the basic concepts, Minbif also has features BitlBee does not have
+
+49
+00:04:48,450 --> 00:00:48,000
+and that are *killer* features
+
+50
+00:04:51,250 --> 00:00:49,000
+first, file transfers, to get any kind pictures
+
+51
+00:04:57,150 --> 00:00:50,000
+it uses DCC, the protocol which is not really in the IRC standard
+
+52
+00:05:03,650 --> 00:00:51,000
+but is over it, to transfer the files
+
+53
+00:05:07,550 --> 00:00:52,000
+so, this is supported, it's cool
+
+54
+00:05:11,050 --> 00:00:53,000
+after, the webcam is also handled over IRC
+
+55
+00:05:14,350 --> 00:00:54,000
+as you might know, there are no streams other than text that are transmitted through IRC
+
+56
+00:05:20,850 --> 00:00:55,000
+hence we use DCC CHAT to transmit the stream, and an irssi plugin is necessary to display the webcam
+
+57
+00:05:31,150 --> 00:00:56,000
+this gives roughly this, in short it uses libcaca for the textual representation
+
+58
+00:05:38,550 --> 00:00:57,000
+since irssi is a console program
+
+59
+00:05:43,450 --> 00:00:58,000
+so if you want to communicate via webcam with your niece or something like that
+
+60
+00:05:49,550 --> 00:00:59,000
+you can use the cacacam, which has a fairly impressive rendering
+
+61
+00:05:56,150 --> 00:01:00,000
+moreover, I don't know if you are users of linuxfr.org
+
+62
+00:06:02,350 --> 00:01:01,000
+of the board, which is a bit hidden
+
+63
+00:06:04,950 --> 00:01:02,000
+which is some sort of chat which uses the website and is not really like IRC
+
+64
+00:06:15,050 --> 00:01:03,000
+while the access is through the website, there is a XML backend to get the messages and post responses
+
+65
+00:06:24,850 --> 00:01:04,000
+so some clients were developed aroud it
+
+66
+00:06:29,650 --> 00:01:05,000
+but for people who want to centralize their communications in irssi for instance
+
+67
+00:06:33,850 --> 00:01:06,000
+a plugin was writtin for libpurple to do this
+
+68
+00:06:38,150 --> 00:01:07,000
+you must no be able to see much, well, a bit still
+
+69
+00:06:43,750 --> 00:01:08,000
+I don't know if you know the principle of the Linuxfr board
+
+70
+00:06:46,750 --> 00:01:09,000
+where to respond we use the *norloges* (timestamps)
+
+71
+00:06:51,150 --> 00:01:10,000
+it's handled and puts the name of the stuff
+
+72
+00:06:54,550 --> 00:01:11,000
+in short, it can enhance your improductivity at work
+
+73
+00:06:58,150 --> 00:01:12,000
+while staying hidden obviously as it stays in irssi
+
+74
+00:07:05,150 --> 00:01:13,000
+globally, I have no idea what hour it is, but I'm almost finished
+
+75
+00:07:10,650 --> 00:01:14,000
+in short, for the features
+
+76
+00:07:18,950 --> 00:01:15,000
+(excuse me? yes? no? ok.)
+
+77
+00:07:24,650 --> 00:01:16,000
+so, for the future features, is the handling of contacts
+
+78
+00:07:29,750 --> 00:01:17,000
+which is in short when you have a jabber and msn account, and the same person on it, you can unite them in a single IRC user
+
+79
+00:07:36,250 --> 00:01:18,000
+the handling of groups, and real webcam, where the idea would be
+
+80
+00:07:39,950 --> 00:01:19,000
+to have an irssi plugin to open a window with a non-libcaca rendering
+
+81
+00:07:48,250 --> 00:01:20,000
+I think that's it
+
+82
+00:07:50,450 --> 00:01:21,000
+Would you have questions, by chance?
+
+83
+00:07:53,950 --> 00:01:22,000
+Sorry? Do I fuck (nique)?
+
+84
+00:07:57,450 --> 00:01:23,000
+Oh, what's my nick? Sorry.
+
+85
+00:08:10,750 --> 00:01:24,000
+Is it a real question?
+
+86
+00:08:15,550 --> 00:01:25,000
+OK, that's cool.
+
+87
+00:08:20,150 --> 00:01:26,000
+So, are there real questions?
+
+88
+00:08:21,750 --> 00:01:27,000
+Yes?
+
+89
+00:08:24,450 --> 00:01:28,000
+OTR? What is it?
+
+90
+00:08:31,250 --> 00:01:29,000
+Oh, yes, indeed. But it's on the IRC client side.
+
+91
+00:08:36,750 --> 00:01:30,000
+It's not Minbif's job.
+
+92
+00:08:38,650 --> 00:01:31,000
+There are many aspects, of the GUI or similar, that are delegated to the IRC client
+
+93
+00:08:44,550 --> 00:01:32,000
+so Minbif does not have to do it.
+
+94
+00:08:46,450 --> 00:01:33,000
+Also, that's cool because Minbif does not have much to do since it is based on libpurple for the protocols
+
+95
+00:08:50,250 --> 00:01:34,000
+and the IRC client for the display.
+
+96
+00:08:53,250 --> 00:01:35,000
+It's a cool project because there is not much to do, but allows me to do conferences.
+
+97
+00:09:01,150 --> 00:01:36,000
+Another question? It would seem not.
+
+98
+00:09:06,450 --> 00:01:37,000
+Well, thanks.
+
